@@ -6,6 +6,7 @@ namespace :capybara do
     require 'capybara'
     Capybara.default_driver = :selenium
     require 'rspec/rails'
+    require 'capybara/rspec'
     require 'capybara/rails'
     require 'capybara/dsl'
     require 'rspec/expectations'
