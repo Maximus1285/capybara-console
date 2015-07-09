@@ -5,9 +5,12 @@ namespace :capybara do
 
     require 'capybara'
     Capybara.default_driver = :selenium
+    require 'rspec/rails'
     require 'capybara/rails'
     require 'capybara/dsl'
+    require 'rspec/expectations'
     include Capybara::DSL
+    include RSpec::Matchers
 
     require 'irb'
     ARGV.clear
